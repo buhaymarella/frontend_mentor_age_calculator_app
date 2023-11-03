@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <main>
+    <form onsubmit="return validateDate()" name="form">
+      <div class="input__container">
+        <div class="day__container">
+          <label for="day" id="day_label">Day</label></br>
+          <input type="number" name="day" placeholder="DD" id="day"><br>
+          <span id="alert_day">This field is required</span>
+        </div>
+        <div class="month__container">
+          <label for="month" id="month_label">Month</label></br>
+          <input type="number" name="month" placeholder="MM" id="month"><br>
+          <span id="alert_month">This field is required</span>
+        </div>
+        <div class="year__container">
+          <label for="year" id="year_label">Year</label></br>
+          <input type="number" name="year" placeholder="YYYY" id="year"><br>
+          <span id="alert_year">This field is required</span>
+        </div>
+      </div>
+      <div class="btn__container">
+        <hr>
+        <button type="submit"><img src="assets/images/icon-arrow.svg" alt="arrow"></button>
+      </div>
+    </form>
+  
+    <div class="result__container">
+      <div class="year__text">
+        <h1 class="dash" id="year_res">- -</h1>&nbsp<h1 id="year__text"> years</h1>
+      </div>
+      <div class="month__text">
+        <h1 class="dash" id="month_res">- -</h1>&nbsp<h1 id="month__text"> months</h1>
+      </div>
+      <div class="day__text">
+        <h1 class="dash" id="day_res">- -</h1>&nbsp<h1 id="day__text"> days</h1>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a rel="noopener" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Marella Buhay</a>.
+    </div>
+  </footer>
+  <script src="script/script.js"></script>
+</body>
+</html>
